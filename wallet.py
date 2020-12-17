@@ -73,7 +73,7 @@ def send_tx(coin, account, recipient, amount):
     else:
         raise Exception('Choose eth or btc-test')
         
-# create_raw_tx(BTCTEST, priv_key_to_account(BTCTEST, coins[BTCTEST][0]['privkey']), coins[BTCTEST][1]['address'], .00001)
+# send_tx(BTCTEST, priv_key_to_account(BTCTEST, coins[BTCTEST][0]['privkey']), coins[BTCTEST][1]['address'], .00001)
 send_tx(ETH, priv_key_to_account(ETH, coins[ETH][0]['privkey']), coins[ETH][1]['address'], 35000000000000000000)
 
 
